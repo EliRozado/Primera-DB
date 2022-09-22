@@ -1,0 +1,21 @@
+<div class="container-md p-3">
+    <h2>Mensajeria</h2>
+    <div class="chat">
+        <ul style="list-style-type: none; padding:5px;" id="mensajes">
+            <li><strong>email</strong> [DD/MM/YY HH:MM:SS]: <em>mensaje</em></li>
+        </ul>
+    </div>
+    <form onsubmit="return enviarMensaje(this)">
+        <div clasS="row">
+            <div class="col-3">
+                <input required type="text" placeholder="email" class="form-control" id="email">
+            </div>
+            <div class="col-6">
+                <input type="text" placeholder="mensaje" class="form-control" id="message">
+            </div>
+            <div class="col-3">
+                <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
