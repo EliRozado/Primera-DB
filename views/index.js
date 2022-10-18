@@ -18,8 +18,8 @@ function renderProducts(data){
     document.getElementById('productos').innerHTML = html
 }
 
-socket.on('mensajes', data => { renderChat(data) })
-socket.on('productos', data => { 
+socket.on('mensajes', async data => { renderChat(data) })
+socket.on('productos', async data => { 
     renderProducts(data);
     data.forEach(product => productos.push(product) )
 });
